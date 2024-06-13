@@ -9,6 +9,7 @@ services:
         depends_on:
             - postgres
             - redis
+        command: sh -c "composer install && php-fpm"
 
     redis:
         image: eqalpha/keydb:alpine_x86_64_v6.3.4

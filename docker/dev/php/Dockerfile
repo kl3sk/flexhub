@@ -11,8 +11,8 @@ WORKDIR /application
 ADD ./backend /application
 
 ENV COMPOSER_ALLOW_SUPERUSER=1
-RUN composer install
+#RUN composer install
 
 EXPOSE 9000
 
-CMD ["php-fpm"]
+#CMD ["php-fpm"]
